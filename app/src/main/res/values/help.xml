@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Miranda Fluharty
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/> -->
+<resources>
+    <string name="help_main_title">Blipsqueak Help</string>
+    <string name="help_main">
+        Blipsqueak allows you to set different notification\u00A0sounds
+        for different types of messages by creating profiles that scan the text of
+        incoming\u00A0notifications for certain patterns and playing an associated sound
+        if the pattern is matched.
+        \n\n
+        First, Blipsqueak has to have access to read your notifications. Then, you can choose
+        which apps will trigger the custom sounds. Set up a few profiles with patterns and sounds
+        and then wait for notifications to come in or test your profiles directly.
+        \n\n
+        To prevent your notifications from triggering multiple sounds simultaneously, you can either
+        set each selected app\'s notifications to be silent or delay Blipsqueak\'s notifications
+        by a second or two in settings.
+        \n\n
+        More detailed help is available on other screens, or feel free to use the "Contact" option
+        if you have any questions.
+    </string>
+    <string name="help_applist_title">Selected Apps Help</string>
+    <string name="help_applist">
+        Only apps that are selected here will be able to trigger Blipsqueak\u00A0sounds. Blipsqueak scans
+        the text from their notifications to see if it matches any of the profiles you\'ve set up.
+    </string>
+    <string name="help_bliplist_title">Profile List Help</string>
+    <string name="help_bliplist">
+        This is the list of all the profiles you\'ve created. Tap the floating action button to add a
+        profile, drag the handles to reorder, and swipe from left to right to delete.
+        \n\n
+        Order matters: messages are scanned against each profile in the order listed here, and the first
+        one that matches is triggered. Organize them from specific to general for the best results.
+        \n\n
+        If you want Blipsqueak to make a default\u00A0sound when notifications don\'t match the rest of
+        your profiles, make the very last profile on your list match any message and set your
+        default\u00A0sound there.
+    </string>
+    <string name="help_detail_title">Profile Creation Help</string>
+    <string name="help_detail">
+        To add your own sounds to the list:
+        \n\n
+        Find or make a folder called \"Notifications\" on your SD card or built-in storage, then
+        copy any sound files you wish to use as notifications into it. Android supports mp3, wav,
+        m4a, and ogg file types.
+        \n\n\n
+        \"Match all patterns\" will only match messages where all of the profile\'s patterns match
+        \n\n
+        \"Match any pattern\" requires only one pattern to match
+        \n\n\n
+        Pattern types:
+        \n\n
+        - contains or does not contain word/phrase: matches messages which contain or don\'t contain
+        the exact given word or phrase with word boundaries on either side (for example, \"no\" would
+        only match the whole word \"no\" and not any other word containing it such as \"snow\")
+        \n\n
+        - contains or does not contain character sequence: matches messages which contain or do not
+        contain the exact given sequence of characters - whether it\'s a whole word or not (in this
+        case, \"no\" would match \"snow\") - use this option to match emoji
+        \n\n
+        - starts with/ends with: matches messages that start or end with the exact given sequence of
+        characters
+        \n\n
+        - number of words/characters: matches messages that have the given number of words or
+        characters (use one number to match exactly that many words/characters or two numbers
+        separated by a comma to match any number of words/characters between those two - you can
+        even use \",4\" for less than 4 or \"6,\" for more than six)
+        \n\n
+        - matches exactly: matches only messages whose content is exactly the given text
+        \n\n
+        - matches any message: will match a message no matter the text (used to set a default sound
+        when no other profiles are matched)
+        \n\n
+        - matches regular expression: matches messages that match the given Java regular expression
+        (advanced, see the Java regular expression documentation for more details)
+    </string>
+</resources>

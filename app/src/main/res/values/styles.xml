@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Miranda Fluharty
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/> -->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowContentOverlay">@drawable/actionbar_shadow</item>
+        <item name="android:spinnerDropDownItemStyle">@style/spinnerItemStyle</item>
+    </style>
+
+    <style name="ActionBar" parent="android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">@color/primary</item>
+        <item name="android:icon">@drawable/actionbar_icon_placeholder_compat</item>
+        <item name="android:titleTextStyle">@style/AppTheme_ActionBar_Title</item>
+        <item name="android:height">56dp</item>
+    </style>
+
+    <style name="AppTheme_ActionBar_Title" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="@android:style/Widget.Holo.Light.DropDownItem.Spinner">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

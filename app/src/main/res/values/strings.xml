@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Miranda Fluharty
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/> -->
+<resources>
+
+    <string name="app_name">Blipsqueak</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+    <string name="action_contact">Contact/Feedback</string>
+    <string name="action_backuprestore">Backup/Restore</string>
+    <string name="action_export">Export this profile</string>
+
+    <string name="select_all">Select all</string>
+    <string name="select_none">Select none</string>
+
+    <string name="title_activity_detail">Edit profile</string>
+    <string name="title_activity_newblip">Add profile</string>
+    <string name="title_activity_main">Blipsqueak</string>
+    <string name="title_activity_bliplist">Profiles</string>
+    <string name="title_activity_test">Test profiles</string>
+    <string name="title_activity_app_list">Select apps</string>
+
+    <string name="discard_prompt">Discard changes?</string>
+    <string name="item_deleted">Item deleted</string>
+    <string name="undo">Undo</string>
+
+    <string name="status_running">Notification listener is running</string>
+    <string name="status_notrunning">Notification listener is NOT running</string>
+    <string name="statusdetail_running">To turn off Blipsqueak sounds, disable notification access in settings - tap here to open notification access settings</string>
+    <string name="statusdetail_notrunning">Blipsqueak will not work if the listener is not running.\n
+        To start the notification listener:\n\n
+         1. Tap here to open settings for notification access\n
+         2. Check the box next to Blipsqueak and confirm\n
+         3. Tap the back button to return to Blipsqueak</string>
+
+    <string name="match_all">all of these patterns</string>
+    <string name="match_any">any of these patterns</string>
+
+    <string name="select_sound">Select a sound</string>
+
+    <string name="test_triggers">Triggers profile: </string>
+    <string name="test_doesnttrigger">No profile would be triggered</string>
+    <string name="test_entermessage">Enter a message to test\u2026</string>
+    <string name="test_hint">Test Message</string>
+
+    <string name="button_addpattern">Add Pattern</string>
+    <string name="button_addsound">Add Sound</string>
+
+    <string name="case_sensitive">Case Sensitive</string>
+    <string name="name_title">Name</string>
+    <string name="name_description">Appears in the profile list</string>
+    <string name="blip_title">Blip</string>
+    <string name="blip_description">Patterns to scan for in notification text</string>
+    <string name="squeak_title">Squeak</string>
+    <string name="squeak_description">Sounds to play when a notification matches</string>
+    <string name="squeak_description2">If multiple sounds are selected, one sound will be chosen at random each time the profile is triggered</string>
+
+    <string name="title_activity_backup_restore">Backup/Restore</string>
+
+    <string name="backup">Backup</string>
+    <string name="restore">Restore</string>
+    <string name="importButton">Import</string>
+
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+
+    <string name="backup_restoreDescription">Restore your profiles from a backup file (this will overwrite existing profiles)</string>
+    <string name="backup_backupDescription">Create a backup file containing all of the sounds you\'ve used and your profile data</string>
+    <string name="backup_importDescription">Import profiles from a backup file without overwriting your existing profiles</string>
+    <string name="backup_exportDescription">Export an individual profile by opening its edit screen and tapping \"Export this profile\" in the menu</string>
+
+    <string name="must_match">Message must match</string>
+
+    <string name="save_export_prompt">Save and export this profile?</string>
+
+</resources>

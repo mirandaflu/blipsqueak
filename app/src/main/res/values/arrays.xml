@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Miranda Fluharty
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/> -->
+<resources>
+    <string-array name="matchOptions">
+        <item>contains word/phrase</item>
+        <item>does not contain word/phrase</item>
+        <item>contains character sequence</item>
+        <item>does not contain character sequence</item>
+        <item>starts with</item>
+        <item>ends with</item>
+        <item>number of words</item>
+        <item>number of characters</item>
+        <item>matches exactly</item>
+        <item>matches any message</item>
+        <item>matches regular expression</item>
+    </string-array>
+
+    <string-array name="mainMenuTitles">
+        <item>Select apps</item>
+        <item>Create and edit profiles</item>
+        <item>Test profiles</item>
+    </string-array>
+    <string-array name="mainMenuDescriptions">
+        <item>Only notifications from selected\u00A0apps will\u00A0be\u00A0scanned</item>
+        <item>Construct patterns\u00A0to\u00A0scan\u00A0for and select sounds\u00A0to\u00A0play</item>
+        <item>Enter a test\u00A0message to see which profile it would\u00A0trigger</item>
+    </string-array>
+    <array name="mainMenuDrawables">
+        <item>@drawable/ic_menu_mark</item>
+        <item>@drawable/ic_menu_edit</item>
+        <item>@drawable/ic_menu_start_conversation</item>
+    </array>
+</resources>
