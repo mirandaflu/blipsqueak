@@ -81,9 +81,8 @@ scaleThings = ->
 		p.style.width = p.parentNode.offsetWidth + 'px'
 
 	if $(window).width() >= 768
-		$('#table').css {'position':'relative', 'top':'0vh'}
-		$('#pocket').css {'position':'relative', 'top':'10vh'}
-		$('#carseat').css {'position':'relative', 'top':'20vh'}
+		$('#pocket').css {'position':'relative', 'top': Math.floor(window.innerHeight * 0.1) + 'px'}
+		$('#carseat').css {'position':'relative', 'top':Math.floor(window.innerHeight * 0.2) + 'px'}
 
 	onResize()
 
