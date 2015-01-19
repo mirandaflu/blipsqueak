@@ -40,16 +40,16 @@ head
 
 body
 
-	.pure-g.primary-darker(style="padding:40px 0;")
+	.pure-g.primary-darker(style="padding:20px 0;")
 		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
 		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.pure-u-xl-6-24
-			img#feature1.pure-img(src="./img/feature-1.png")
+			img#feature1.pure-img
 		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.pure-u-xl-6-24
-			img#feature2.pure-img(src="./img/feature-2.png")
+			img#feature2.pure-img
 		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
 	.pure-g.primary-darker
 		.pure-u-1.pure-u-md-10-24.pure-u-lg-10-24.pure-u-xl-11-24
-		.pure-u-1.pure-u-md-12-24.pure-u-lg-10-24.pure-u-xl-7-24.halfspacer
+		.pure-u-1.pure-u-md-12-24.pure-u-lg-10-24.pure-u-xl-7-24(style="padding:20px 0;")
 			a(href="//get.blipsqueak.io")
 				img(alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png")
 		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
@@ -180,15 +180,18 @@ body
 		.pure-u-1.spacer(style="padding-top:80px")
 			.pure-menu.pure-menu-open.pure-menu-horizontal
 				ul
-					li: a(href="//github.com/mirandaflu/Blipsqueak")
-							i.fa.fa-github
-							span  Github
 					li: a(href="//twitter.com/blipsqueak")
 							i.fa.fa-twitter
-							span  @blipsqueak
+							span &nbsp;&nbsp;@blipsqueak
 					li: a(href="mailto:blipsqueakapp@gmail.com")
 							i.fa.fa-envelope
-							span  blipsqueakapp@gmail.com
+							span &nbsp;&nbsp;Email Feedback
+					li: a(href="//plus.google.com/communities/117746824607589714365")
+							i.fa.fa-google-plus
+							span &nbsp;&nbsp;Beta community
+					li: a(href="//github.com/mirandaflu/Blipsqueak")
+							i.fa.fa-github
+							span &nbsp;&nbsp;Source on Github
 
 	script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 	script(type="text/javascript" src="./ext/jquery.waypoints.min.js")
