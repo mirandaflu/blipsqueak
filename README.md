@@ -1,7 +1,7 @@
 # Blipsqueak
 
 <img alt="Screenshot" align="right" height="350"
-   src="/../gh-pages/img/screenshots/mainScreen-nexus5.png?raw=true" />
+   src="/../gh-pages/img/device art/mainScreen-nexus5.png?raw=true" />
 
 With Blipsqueak, you can set different notification sounds for different types of messages. For example, a short chirp for one word messages or and ascending tone for messages that end with a question mark.
 
