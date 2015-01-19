@@ -1,0 +1,197 @@
+//
+	Copyright (C) 2015 Miranda Fluharty
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>
+	
+doctype html
+html(lang="en")
+head
+	title Blipsqueak | Different notification sounds for different messages
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+
+	link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,700")
+	link(rel="stylesheet" type="text/css" href="//yui.yahooapis.com/pure/0.5.0/pure-min.css")
+	link(rel="stylesheet" type="text/css" href="//yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css")
+	link(rel="stylesheet" type="text/css" href="./ext/blueimp-gallery.min.css")
+	link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+		
+	//- faviconit.com favicons
+	link(rel="shortcut icon" href="./img/favicon/favicon.ico")
+	link(rel="icon" sizes="16x16 32x32 64x64" href="./img/favicon/favicon.ico")
+	link(rel="icon" type="image/png" sizes="196x196" href="./img/favicon/favicon-192.png")
+	link(rel="icon" type="image/png" sizes="160x160" href="./img/favicon/favicon-160.png")
+	link(rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96.png")
+	link(rel="icon" type="image/png" sizes="64x64" href="./img/favicon/favicon-64.png")
+	link(rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32.png")
+	link(rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16.png")
+		
+	include style.jade
+
+body
+
+	.pure-g.primary-darker(style="padding:5vh 0;")
+		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
+		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.pure-u-xl-6-24
+			img#feature1.pure-img(src="./img/feature-1.png")
+		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.pure-u-xl-6-24
+			img#feature2.pure-img(src="./img/feature-2.png")
+		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
+	.pure-g.primary-darker
+		.pure-u-1.pure-u-md-10-24.pure-u-lg-10-24.pure-u-xl-11-24
+		.pure-u-1.pure-u-md-12-24.pure-u-lg-10-24.pure-u-xl-7-24.halfspacer
+			a(href="//get.blipsqueak.io")
+				img(alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png")
+		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
+
+	.pure-g
+		.pure-u-1.halfspacer
+		.pure-u-1
+			h3 Have you ever wanted to get the gist of messages that you hear come in...
+		.pure-u-1.halfspacer
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-5-24
+		.pure-u-1.pure-u-md-22-24.pure-u-lg-14-24
+			#table.pure-u-1.pure-u-md-1-3
+				.pure-u-1-2.pure-u-md-1 from across the room?
+				.pure-u-1-2.pure-u-md-1.relative
+					img.pure-img(src="./img/table.png")
+					img.pure-img.lightup(src="./img/table-light.png")
+			#pocket.pure-u-1.pure-u-md-1-3
+				.pure-u-1-2.pure-u-md-1 inside a pocket?
+				.pure-u-1-2.pure-u-md-1.relative
+					img.pure-img(src="./img/backpack.png")
+					img.pure-img.lightup(src="./img/backpack-light.png")
+			#carseat.pure-u-1.pure-u-md-1-3
+				.pure-u-1-2.pure-u-md-1 while driving?
+				.pure-u-1-2.pure-u-md-1.relative
+					img.pure-img(src="./img/carseat.png")
+					img.pure-img.lightup(src="./img/carseat-light.png")
+		.pure-u-md-1-24.pure-u-lg-5-24(style="height:50vh")
+
+	.pure-g
+		.pure-u-1.halfspacer
+		.pure-u-1.primary-dark.float-above
+			h3 With Blipsqueak, you can set different notification sounds for different types of messages
+	
+	.pure-g.primary
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-3-24
+		.pure-u-1.pure-u-md-12-24.pure-u-lg-10-24.primary.float-above
+			p.padded.shadow Create profiles to match the types of messages that you want to hear about
+		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.imgholder
+			img.pure-img.segment.stuck(src="./img/stuck-styled/segment_1.png")
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-3-24
+
+	.pure-g: .pure-u-1.spacer.dark.innershadow
+
+	.pure-g.primary
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-3-24
+		.pure-u-1.pure-u-md-12-24.pure-u-lg-10-24.primary.float-above
+			p.padded.shadow Add a few patterns to check for in the text of the notification
+		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.imgholder
+			img.pure-img.segment.stuck(src="./img/stuck-styled/segment_2.png")
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-3-24
+
+	.pure-g: .pure-u-1.spacer.dark.innershadow
+
+	.pure-g.primary
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-3-24
+		.pure-u-1.pure-u-md-12-24.pure-u-lg-10-24.primary.float-above
+			p.padded.shadow Pick a notification sound
+		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.imgholder
+			img.pure-img.segment.stuck(src="./img/stuck-styled/segment_3.png")
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-3-24
+	
+	.pure-g: #fadespacer.pure-u-1.spacer.dark.innershadow
+
+	#notification.pure-g
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-3-24
+		.pure-u-1.pure-u-md-12-24.pure-u-lg-10-24
+			p.padded ... and the next time a matching notification arrives, your sound will play
+		.pure-u-1.pure-u-md-11-24.pure-u-lg-8-24.relative
+			h1#pling.angled *Pling*
+			img.pure-img(src="./img/blank-phone.png")
+			img.pure-img.lightup(src="./img/notification-onphone.png")
+		.pure-u-1.pure-u-md-1-24.pure-u-lg-3-24
+			
+	#features.pure-g.dark.innershadow
+		.pure-u-1: h2 Features
+		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
+			strong Choose which apps to use it with
+			br
+			span Works with any app that posts notifications
+		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
+			strong Bring your own sounds
+			br
+			span Any mp3, m4a, wav, or ogg file
+		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
+			strong Get specific
+			br
+			span Match words, parts of words, characters, emoji, message length, and more
+		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
+			strong Get REALLY specific
+			br
+			span Match any or all of the given patterns - case sensitive or not - and even match based on Java regular expressions
+		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
+			strong Randomized sounds
+			br
+			span If more than one sound is added to a profile, one sound will be chosen at random each time it triggers
+		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
+			strong Delayed sounds
+			br
+			span In case you still want to hear your app- or contact-specific sounds too
+		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
+			strong Backup and Restore
+			br
+			span Transfer your profiles and sounds between devices, even send them to friends
+		.pure-u-1.feature
+			a(href="//get.blipsqueak.io")
+				img(alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png")
+	
+	#idea-header.pure-g
+		.pure-u-1
+			h2 A few ideas to get you started
+			span Tap/click to enlarge
+	#ideas.pure-g
+		.pure-u-1.pure-u-lg-4-24
+		.pure-u-6-24.pure-u-lg-4-24: a(href="./img/ideas/yes.png"): img.pure-img(src="./img/ideas/yes.png")
+		.pure-u-6-24.pure-u-lg-4-24: a(href="./img/ideas/thanks.png"): img.pure-img(src="./img/ideas/thanks.png")
+		.pure-u-6-24.pure-u-lg-4-24: a(href="./img/ideas/ok.png"): img.pure-img(src="./img/ideas/ok.png")
+		.pure-u-6-24.pure-u-lg-4-24: a(href="./img/ideas/tongue.png"): img.pure-img(src="./img/ideas/tongue.png")
+		.pure-u-1.pure-u-lg-4-24
+		//- .pure-u-1-5: a(href="./img/ideas/no.png"): img.pure-img(src="./img/ideas/no.png")
+		//- .pure-u-1-5: a(href="./img/ideas/questions.png"): img.pure-img(src="./img/ideas/questions.png")
+		//- .pure-u-1-5: a(href="./img/ideas/caps.png"): img.pure-img(src="./img/ideas/caps.png")
+				
+	#blueimp-gallery.blueimp-gallery
+		.slides
+		ol.indicator
+	
+	#footer.pure-g.primary-darker.innershadow
+		.pure-u-1.spacer(style="padding-top:10vh")
+			.pure-menu.pure-menu-open.pure-menu-horizontal
+				ul
+					li: a(href="//github.com/mirandaflu/Blipsqueak")
+							i.fa.fa-github
+							span  Github
+					li: a(href="//twitter.com/blipsqueak")
+							i.fa.fa-twitter
+							span  @blipsqueak
+					li: a(href="mailto:blipsqueakapp@gmail.com")
+							i.fa.fa-envelope
+							span  blipsqueakapp@gmail.com
+
+	script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+	script(type="text/javascript" src="./ext/jquery.waypoints.min.js")
+	script(type="text/javascript" src="./ext/jquery.stuck.js")
+	script(type="text/javascript" src="./ext/blueimp-gallery.min.js")
+	script(type="text/javascript" src="./scaling.js")
