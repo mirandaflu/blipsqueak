@@ -22,6 +22,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -78,6 +79,10 @@ public class MainActivity extends BaseActivity {
                 emailIntent.setType("plain/text");
                 emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"blipsqueakapp@gmail.com"});
                 startActivity(Intent.createChooser(emailIntent, "Send email..."));
+                break;
+            case R.id.action_website:
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://blipsqueak.io"));
+                startActivity(browserIntent);
                 break;
             case R.id.action_help:
                 new AlertDialog.Builder(this)

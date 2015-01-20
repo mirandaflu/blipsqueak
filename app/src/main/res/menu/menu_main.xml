@@ -35,10 +35,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
         android:orderInCategory="4"
         app:showAsAction="never" />
     <item
+        android:id="@+id/action_website"
+        android:title="@string/action_website"
+        android:orderInCategory="5"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/action_contact"
         android:icon="@android:drawable/ic_menu_send"
         android:title="@string/action_contact"
-        android:orderInCategory="5"
+        android:orderInCategory="6"
         app:showAsAction="never" />
 
 </menu>

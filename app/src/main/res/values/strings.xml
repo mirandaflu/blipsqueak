@@ -86,5 +86,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
     <string name="must_match">Message must match</string>
 
     <string name="save_export_prompt">Save and export this profile?</string>
+    <string name="action_website">Website</string>
 
 </resources>
