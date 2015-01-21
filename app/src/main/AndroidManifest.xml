@@ -113,7 +113,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
         <activity
             android:name=".BackupRestore"
             android:label="@string/title_activity_backup_restore"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".SettingsActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.blipsqueak.app.MainActivity" />

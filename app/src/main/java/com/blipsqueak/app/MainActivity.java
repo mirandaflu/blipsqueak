@@ -43,7 +43,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         setTitle(R.string.title_activity_main);
 
-        vi = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        vi = getLayoutInflater();
         llMenu = (LinearLayout) findViewById(R.id.llMenu);
 
         populateMainMenu();
@@ -90,8 +90,6 @@ public class MainActivity extends BaseActivity {
                         .setMessage(getString(R.string.help_main))
                         .setCancelable(true).show();
                 break;
-            case R.id.action_backuprestore:
-                openActivity(BackupRestore.class);
         }
 
         return super.onOptionsItemSelected(item);

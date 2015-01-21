@@ -15,6 +15,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/> -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceScreen
+        android:title="@string/action_backuprestore"
+        android:summary="@string/backup_settingsSummary">
+            <intent
+                android:targetPackage="com.blipsqueak.app"
+                android:targetClass="com.blipsqueak.app.BackupRestore" />
+    </PreferenceScreen>
+
     <com.blipsqueak.app.NumberPickerPreference
         android:key="sound_delay"
         android:title="@string/pref_title_sound_delay"

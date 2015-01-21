@@ -71,7 +71,7 @@ public class NewblipActivity extends BaseActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         blip = new Blip();
-        vi = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        vi = getLayoutInflater();
         ruleList = (LinearLayout) findViewById(R.id.llRules);
         soundList = (LinearLayout) findViewById(R.id.llSounds);
         addRule(findViewById(R.id.llRules));

@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
 
     <string name="pref_title_sound_delay">Sound delay</string>
     <string name="pref_description_sound_delay">
-        Amount of time to delay customized sounds in seconds
-        (in case you want to use them alongside app- or contact-specific sounds)</string>
+        Amount of time to delay Blipsqueak\'s sounds in seconds
+        (for use along with app- or contact-specific sounds)</string>
 
 </resources>

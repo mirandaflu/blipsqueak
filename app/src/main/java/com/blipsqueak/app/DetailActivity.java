@@ -34,13 +34,14 @@ public class DetailActivity extends NewblipActivity {
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
+        vi = getLayoutInflater();
+
         Intent intent = getIntent();
         long blipID = (long) intent.getExtras().getSerializable("blipID");
         blip = Blip.findById(Blip.class, blipID);
-        blip.restoreToView(this, findViewById(R.id.blipView));
+        blip.restoreToView(this, findViewById(R.id.blipView), vi);
         oldBlip = blip.stringFromView(findViewById(R.id.blipView));
 
-        vi = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         ruleList = (LinearLayout) findViewById(R.id.llRules);
         soundList = (LinearLayout) findViewById(R.id.llSounds);
     }
