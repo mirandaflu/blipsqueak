@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+include head.jade
+body
+
+	.pure-g.primary-darker(style="padding:20px 0;")
+		.pure-u-1
+			h1 Idea gallery
+			h4 Send in screenshots of your profiles to get them featured here
+			span Tap/click to enlarge
+		
+	#ideas.pure-g
+		each idea in ["./img/ideas/yes.png","./img/ideas/thanks.png","./img/ideas/ok.png","./img/ideas/tongue.png","./img/ideas/no.png","./img/ideas/questions.png","./img/ideas/caps.png"]
+			.pure-u-6-24.pure-u-lg-4-24: a(href=idea): img.pure-img(src=idea)
+			
+	#blueimp-gallery.blueimp-gallery
+		.slides
+		ol.indicator
+	
+	include footer.jade
+
+	script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+	script(type="text/javascript" src="./ext/blueimp-gallery.min.js")
+	script(type="text/javascript").
+		document.getElementById('ideas').onclick = function(event) {
+			var link, links, options, target;
+			event = event || window.event;
+			target = event.target || event.srcElement;
+			if (target.tagName !== 'IMG') return;
+			link = target.src ? target.parentNode : target;
+			options = {
+				index: link,
+				event: event
+			};
+			links = this.getElementsByTagName('a');
+			return blueimp.Gallery(links, options);
+		};

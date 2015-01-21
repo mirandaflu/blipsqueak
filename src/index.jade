@@ -16,42 +16,18 @@
 	
 doctype html
 html(lang="en")
-head
-	title Blipsqueak | Different notification sounds for different messages
-	meta(name="viewport" content="width=device-width, initial-scale=1")
-
-	link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,700")
-	link(rel="stylesheet" type="text/css" href="//yui.yahooapis.com/pure/0.5.0/pure-min.css")
-	link(rel="stylesheet" type="text/css" href="//yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css")
-	link(rel="stylesheet" type="text/css" href="./ext/blueimp-gallery.min.css")
-	link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
-		
-	//- faviconit.com favicons
-	link(rel="shortcut icon" href="./img/favicon/favicon.ico")
-	link(rel="icon" sizes="16x16 32x32 64x64" href="./img/favicon/favicon.ico")
-	link(rel="icon" type="image/png" sizes="196x196" href="./img/favicon/favicon-192.png")
-	link(rel="icon" type="image/png" sizes="160x160" href="./img/favicon/favicon-160.png")
-	link(rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96.png")
-	link(rel="icon" type="image/png" sizes="64x64" href="./img/favicon/favicon-64.png")
-	link(rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32.png")
-	link(rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16.png")
-		
-	include style.jade
-
+include head.jade
 body
 
 	.pure-g.primary-darker(style="padding:20px 0;")
 		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
-		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.pure-u-xl-6-24
-			img#feature1.pure-img(src="./img/feature-blank.png")
-		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.pure-u-xl-6-24
-			img#feature2.pure-img(src="./img/feature-blank.png")
+		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.pure-u-xl-6-24: img#feature1.pure-img(src="./img/feature-blank.png")
+		.pure-u-1.pure-u-md-10-24.pure-u-lg-8-24.pure-u-xl-6-24: img#feature2.pure-img(src="./img/feature-blank.png")
 		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
 	.pure-g.primary-darker
 		.pure-u-1.pure-u-md-10-24.pure-u-lg-10-24.pure-u-xl-11-24
 		.pure-u-1.pure-u-md-12-24.pure-u-lg-10-24.pure-u-xl-7-24(style="padding:20px 0;")
-			a(href="//get.blipsqueak.io")
-				img(alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png")
+			a(href="//get.blipsqueak.io"): img(alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png")
 		.pure-u-1.pure-u-md-2-24.pure-u-lg-4-24.pure-u-xl-6-24
 
 	.pure-g
@@ -126,36 +102,28 @@ body
 	#features.pure-g.dark.innershadow
 		.pure-u-1: h2 Features
 		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
-			strong Choose which apps to use it with
-			br
+			strong Choose which apps to use it with<br />
 			span Works with any app that posts notifications
 		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
-			strong Bring your own sounds
-			br
+			strong Bring your own sounds<br />
 			span Any mp3, m4a, wav, or ogg file
 		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
-			strong Get specific
-			br
+			strong Get specific<br />
 			span Match words, parts of words, characters, emoji, message length, and more
 		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
-			strong Get REALLY specific
-			br
+			strong Get REALLY specific<br />
 			span Match any or all of the given patterns - case sensitive or not - and even match based on Java regular expressions
 		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
-			strong Randomized sounds
-			br
+			strong Randomized sounds<br />
 			span If more than one sound is added to a profile, one sound will be chosen at random each time it triggers
 		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
-			strong Delayed sounds
-			br
+			strong Delayed sounds<br />
 			span In case you still want to hear your app- or contact-specific sounds too
 		.pure-u-1.pure-u-md-1-2.pure-u-lg-1-5.feature
-			strong Backup and Restore
-			br
+			strong Backup and Restore<br />
 			span Transfer your profiles and sounds between devices, even send them to friends
 		.pure-u-1.feature
-			a(href="//get.blipsqueak.io")
-				img(alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png")
+			a(href="//get.blipsqueak.io"): img(alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_60.png")
 	
 	#idea-header.pure-g
 		.pure-u-1
@@ -163,14 +131,12 @@ body
 			span Tap/click to enlarge
 	#ideas.pure-g
 		.pure-u-1.pure-u-lg-4-24
-		.pure-u-6-24.pure-u-lg-4-24: a(href="./img/ideas/yes.png"): img.pure-img(src="./img/ideas/yes.png")
-		.pure-u-6-24.pure-u-lg-4-24: a(href="./img/ideas/thanks.png"): img.pure-img(src="./img/ideas/thanks.png")
-		.pure-u-6-24.pure-u-lg-4-24: a(href="./img/ideas/ok.png"): img.pure-img(src="./img/ideas/ok.png")
-		.pure-u-6-24.pure-u-lg-4-24: a(href="./img/ideas/tongue.png"): img.pure-img(src="./img/ideas/tongue.png")
+		each idea in ["./img/ideas/yes.png","./img/ideas/thanks.png","./img/ideas/ok.png","./img/ideas/tongue.png"]
+			.pure-u-6-24.pure-u-lg-4-24: a(href=idea): img.pure-img(src=idea)
 		.pure-u-1.pure-u-lg-4-24
-		//- .pure-u-1-5: a(href="./img/ideas/no.png"): img.pure-img(src="./img/ideas/no.png")
-		//- .pure-u-1-5: a(href="./img/ideas/questions.png"): img.pure-img(src="./img/ideas/questions.png")
-		//- .pure-u-1-5: a(href="./img/ideas/caps.png"): img.pure-img(src="./img/ideas/caps.png")
+	.pure-g
+		.pure-u-1
+			a.darklink(href="./gallery.html") More...<br /><br />
 				
 	#blueimp-gallery.blueimp-gallery
 		.slides
@@ -186,9 +152,6 @@ body
 					li: a(href="mailto:blipsqueakapp@gmail.com")
 							i.fa.fa-envelope
 							span &nbsp;&nbsp;Email Feedback
-					li: a(href="//plus.google.com/communities/117746824607589714365")
-							i.fa.fa-google-plus
-							span &nbsp;&nbsp;Beta community
 					li: a(href="//github.com/mirandaflu/Blipsqueak")
 							i.fa.fa-github
 							span &nbsp;&nbsp;Source on Github
