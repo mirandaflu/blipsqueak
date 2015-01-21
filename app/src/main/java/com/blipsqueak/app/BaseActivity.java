@@ -17,13 +17,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 package com.blipsqueak.app;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
 
-public class BaseActivity extends Activity {
+public class BaseActivity extends ActionBarActivity {
 
     @Override
     public void onBackPressed() {

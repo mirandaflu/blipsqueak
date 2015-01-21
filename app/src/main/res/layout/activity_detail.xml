@@ -145,7 +145,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
             android:paddingRight="8dp" />
 
         <ToggleButton
-            android:layout_width="160dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:id="@+id/toggleMatch"
             android:checked="false"
@@ -159,7 +159,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
             android:paddingRight="8dp"
             android:layout_below="@+id/tvBlipDescription"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="8dp" />
+            android:layout_marginRight="8dp"
+            android:minWidth="160dp" />
 
         <ToggleButton
             android:layout_width="wrap_content"
@@ -181,7 +182,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/case_sensitive"
             android:id="@+id/tvCaseSensitive"
@@ -206,7 +207,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/must_match"
             android:id="@+id/textView"
             android:textColor="@color/grey54"

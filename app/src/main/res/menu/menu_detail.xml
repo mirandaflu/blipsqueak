@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
         android:id="@+id/action_save"
         android:title="@string/action_save"
         android:orderInCategory="1"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom|withText" />
     <item
         android:id="@+id/action_export"
         android:title="@string/action_export"

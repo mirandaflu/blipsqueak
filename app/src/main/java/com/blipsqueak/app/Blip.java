@@ -277,7 +277,7 @@ class Blip extends SugarRecord<Blip> implements Serializable{
         }
         return res;
     }
-    public void restoreToView(final Context context, View view) {
+    public void restoreToView(final Context context, View view, LayoutInflater vi) {
         EditText etName = (EditText) view.findViewById(R.id.etName);
         etName.setText(this.name);
 
@@ -291,7 +291,6 @@ class Blip extends SugarRecord<Blip> implements Serializable{
             cs.setChecked(true);
         }
 
-        LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         LinearLayout llRules = (LinearLayout) view.findViewById(R.id.llRules);
         List<Rule> rules = Select.from(Rule.class).where("blip_id = "+this.getId()).list();
         for (Rule rule : rules) {

@@ -47,8 +47,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
          2. Check the box next to Blipsqueak and confirm\n
          3. Tap the back button to return to Blipsqueak</string>
 
-    <string name="match_all">all of these patterns</string>
-    <string name="match_any">any of these patterns</string>
+    <string name="match_all">all\u00A0of\u00A0these\u00A0patterns</string>
+    <string name="match_any">any\u00A0of\u00A0these\u00A0patterns</string>
 
     <string name="select_sound">Select a sound</string>
 
@@ -82,6 +82,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
     <string name="backup_backupDescription">Create a backup file containing all of the sounds you\'ve used and your profile data</string>
     <string name="backup_importDescription">Import profiles from a backup file without overwriting your existing profiles</string>
     <string name="backup_exportDescription">Export an individual profile by opening its edit screen and tapping \"Export this profile\" in the menu</string>
+    <string name="backup_settingsSummary">Backup, restore, and import profiles and sounds</string>
 
     <string name="must_match">Message must match</string>
 

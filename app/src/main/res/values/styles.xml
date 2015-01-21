@@ -15,28 +15,18 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/> -->
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <item name="android:actionBarStyle">@style/ActionBar</item>
-        <item name="android:windowActionBar">true</item>
-        <item name="android:windowContentOverlay">@drawable/actionbar_shadow</item>
-        <item name="android:spinnerDropDownItemStyle">@style/spinnerItemStyle</item>
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="colorControlNormal">@color/lightgrey</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlHighlight">@color/lightgrey</item>
     </style>
 
-    <style name="ActionBar" parent="android:style/Widget.Holo.ActionBar.Solid">
-        <item name="android:background">@color/primary</item>
-        <item name="android:icon">@drawable/actionbar_icon_placeholder_compat</item>
-        <item name="android:titleTextStyle">@style/AppTheme_ActionBar_Title</item>
+    <style name="ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/primary</item>
         <item name="android:height">56dp</item>
-    </style>
-
-    <style name="AppTheme_ActionBar_Title" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">20sp</item>
-    </style>
-
-    <style name="spinnerItemStyle" parent="@android:style/Widget.Holo.Light.DropDownItem.Spinner">
-        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>

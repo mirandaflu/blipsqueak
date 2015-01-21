@@ -19,15 +19,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
     tools:context="com.blipsqueak.app.MainActivity">
     <item
         android:id="@+id/action_settings"
-        android:icon="@android:drawable/ic_menu_preferences"
+        android:icon="@drawable/ic_settings"
         android:title="@string/action_settings"
         android:orderInCategory="1"
         app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/action_backuprestore"
-        android:title="@string/action_backuprestore"
-        android:orderInCategory="2"
-        app:showAsAction="never" />
     <item
         android:id="@+id/action_help"
         android:icon="@android:drawable/ic_menu_help"
