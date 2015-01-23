@@ -12,7 +12,7 @@ a.darklink {color:#482635; font-weight:bold;}
 .primary-dark {background-color:#824563; color:white;}
 .primary-darker {background-color:#482635 !important; color:white;}
 .dark {background-color:#363636; color:white; z-index:1;}
-.accent {background-color:#FFC107; color:black;}
+.accent {background-color:#FFC107; color:white;}
 
 p.padded {padding:50px;}
 .spacer {min-height:25vh;}
@@ -37,6 +37,30 @@ p.padded {padding:50px;}
 	transform: rotate(-30deg);
 }
 
+#floatingActions {
+	position:fixed;
+	bottom:0; right:0;
+	z-index:1001;
+	height:56px; width:56px;
+	margin:10px;
+}
+#floatingActions .button, #floatingActions #share {
+	position:absolute;
+	top:0; left:0;
+	border:none; border-radius:50%;
+	height:56px; width:56px;
+	padding:15px;
+	text-align:center;
+	font-size:26px;
+}
+#floatingActions .button {color:white; opacity:0;}
+#floatingActions #share {opacity:1;}
+
+#facebook {background-color:#3b5998;}
+#twitter {background-color:#55ACEE;}
+#tumblr {background-color:#35465c;}
+#google-plus {background-color:#dd4b39;}
+
 #ideas, #features, .feature, #footer {padding:30px;}
 #ideas img {border:1px solid #757575;}
 
@@ -50,16 +74,4 @@ p.padded {padding:50px;}
 #pling {color:#757575;}
 
 h3 {margin:20px 5vw;}
-i {font-family:sans-serif;}</style></head><body><div style="padding:20px 0" class="pure-g primary-darker"><div class="pure-u-1"><h1>Idea gallery</h1><h4>Send in screenshots of your profiles to get them featured here</h4><span>Tap/click to enlarge</span></div></div><div id="ideas" class="pure-g"><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/yes.png"><img src="./img/ideas/yes.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/thanks.png"><img src="./img/ideas/thanks.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/ok.png"><img src="./img/ideas/ok.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/tongue.png"><img src="./img/ideas/tongue.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/no.png"><img src="./img/ideas/no.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/questions.png"><img src="./img/ideas/questions.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/caps.png"><img src="./img/ideas/caps.png" class="pure-img"></a></div></div><div id="blueimp-gallery" class="blueimp-gallery"><div class="slides"></div><ol class="indicator"></ol></div><div id="footer" class="pure-g primary-darker innershadow"><div style="padding-top:80px" class="pure-u-1 spacer"><div class="pure-menu pure-menu-open pure-menu-horizontal"><ul><li><a href="//twitter.blipsqueak.io"><i class="fa fa-twitter"></i><span>&nbsp;&nbsp;@blipsqueak</span></a></li><li><a href="mailto:blipsqueakapp@gmail.com"><i class="fa fa-envelope"></i><span>&nbsp;&nbsp;Email Feedback</span></a></li><li><a href="//repo.blipsqueak.io"><i class="fa fa-github"></i><span>&nbsp;&nbsp;Source on Github</span></a></li></ul></div></div></div><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script type="text/javascript" src="./ext/blueimp-gallery.min.js"></script><script type="text/javascript">document.getElementById('ideas').onclick = function(event) {
-	var link, links, options, target;
-	event = event || window.event;
-	target = event.target || event.srcElement;
-	if (target.tagName !== 'IMG') return;
-	link = target.src ? target.parentNode : target;
-	options = {
-		index: link,
-		event: event
-	};
-	links = this.getElementsByTagName('a');
-	return blueimp.Gallery(links, options);
-};</script></body>
+i {font-family:sans-serif;}</style></head><body><div style="padding:20px 0" class="pure-g primary-darker"><div class="pure-u-1"><h1>Idea gallery</h1><h4>Send in screenshots of your profiles to get them featured here</h4><span>Tap/click to enlarge</span></div></div><div id="ideas" class="pure-g"><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/yes.png"><img src="./img/ideas/yes.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/thanks.png"><img src="./img/ideas/thanks.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/ok.png"><img src="./img/ideas/ok.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/tongue.png"><img src="./img/ideas/tongue.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/no.png"><img src="./img/ideas/no.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/questions.png"><img src="./img/ideas/questions.png" class="pure-img"></a></div><div class="pure-u-6-24 pure-u-lg-4-24"><a href="./img/ideas/caps.png"><img src="./img/ideas/caps.png" class="pure-img"></a></div></div><div id="blueimp-gallery" class="blueimp-gallery"><div class="slides"></div><ol class="indicator"></ol></div><div id="footer" class="pure-g primary-darker innershadow"><div style="padding-top:80px" class="pure-u-1 spacer"><div class="pure-menu pure-menu-open pure-menu-horizontal"><ul><li><a href="//twitter.com/blipsqueak"><i class="fa fa-twitter"></i><span>&nbsp;&nbsp;@blipsqueak</span></a></li><li><a href="//plus.google.com/communities/117357192458867456536"><i class="fa fa-google-plus"></i><span>&nbsp;&nbsp;Community</span></a></li><li><a href="mailto:blipsqueakapp@gmail.com"><i class="fa fa-envelope"></i><span>&nbsp;&nbsp;Email</span></a></li><li><a href="//github.com/mirandaflu/blipsqueak"><i class="fa fa-github"></i><span>&nbsp;&nbsp;Source on Github</span></a></li></ul></div></div></div><div id="floatingActions" class="relative"><a id="twitter" href="javascript:popup('https://twitter.com/home?status=I%20just%20found%20a%20new%20sound%20customization%20app%20called%20@blipsqueak!%20Check%20it%20out%20at%20http://blipsqueak.io');" class="button shadow"><i class="fa fa-twitter"></i></a><a id="google-plus" href="javascript:popup('https://plus.google.com/share?url=http%3A%2F%2Fblipsqueak.io');" class="button shadow"><i class="fa fa-google-plus"></i></a><a id="tumblr" href="javascript:popup('http://www.tumblr.com/share/link?url=http%3A%2F%2Fblipsqueak.io&amp;name=Blipsqueak&amp;description=I%20just%20found%20a%20new%20Android%20app%20for%20customizing%20notification%20sounds%20called%20Blipsqueak.%20Check%20it%20out!')" class="button shadow"><i class="fa fa-tumblr"></i></a><a id="facebook" href="javascript:popup('https://www.facebook.com/sharer/sharer.php?u=http://blipsqueak.io');" class="button shadow"><i class="fa fa-facebook"></i></a><a id="share" href="javascript:toggleActionMenu();" class="accent shadow"><i class="fa fa-share-alt"></i><i style="display:none" class="fa fa-times"></i></a></div><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script type="text/javascript" src="./ext/blueimp-gallery.min.js"></script><script type="text/javascript" src="./js/ideaGallery.min.js"></script><script type="text/javascript" src="./js/floatingActions.min.js"></script></body>

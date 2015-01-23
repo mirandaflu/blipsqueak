@@ -15,11 +15,15 @@ module.exports = (grunt) ->
 		coffee:
 			compile:
 				files:
-					'./temp/scaling.js': ['./src/scaling.coffee']
+					'./temp/index.js': ['./src/index.coffee']
+					'./temp/floatingActions.js': ['./src/floatingActions.coffee']
+					'./temp/ideaGallery.js': ['./src/ideaGallery.coffee']
 		uglify:
 			minify:
 				files:
-					'./scaling.min.js': ['./temp/scaling.js']
+					'./js/index.min.js': ['./temp/index.js']
+					'./js/floatingActions.min.js': ['./temp/floatingActions.js']
+					'./js/ideaGallery.min.js': ['./temp/ideaGallery.js']
 					'./ext/jquery.stuck.min.js': ['./ext/jquery.stuck.js']
 		htmlmin:
 			minify:
