@@ -34,6 +34,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
     <string name="title_activity_test">Test profiles</string>
     <string name="title_activity_app_list">Select apps</string>
 
+    <string name="confirm_overwrite">This will overwrite your existing data, are you sure you want to continue?
+        \n\n
+        You can use \"Import\" to add profiles without overwriting anything</string>
     <string name="discard_prompt">Discard changes?</string>
     <string name="item_deleted">Item deleted</string>
     <string name="undo">Undo</string>
@@ -78,10 +81,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/> -->
     <string name="yes">yes</string>
     <string name="no">no</string>
 
-    <string name="backup_restoreDescription">Restore your profiles from a backup file (this will overwrite existing profiles)</string>
-    <string name="backup_backupDescription">Create a backup file containing all of the sounds you\'ve used and your profile data</string>
-    <string name="backup_importDescription">Import profiles from a backup file without overwriting your existing profiles</string>
-    <string name="backup_exportDescription">Export an individual profile by opening its edit screen and tapping \"Export this profile\" in the menu</string>
+    <string name="backup_backupDescription">Create a backup file that contains all of the sound files you\'ve used and your profile data</string>
+    <string name="backup_restoreDescription">Restore your profiles and sounds from a backup file (this will overwrite existing profiles)</string>
+    <string name="backup_importDescription">Import profiles and sounds from a backup file without overwriting your existing profiles</string>
+    <string name="backup_exportDescription">Export an individual profile by opening its edit screen and selecting \"Export this profile\" in the menu</string>
     <string name="backup_settingsSummary">Backup, restore, and import profiles and sounds</string>
 
     <string name="must_match">Message must match</string>

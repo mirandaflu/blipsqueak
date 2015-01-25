@@ -18,6 +18,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 package com.blipsqueak.app;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -85,14 +87,34 @@ public class BackupRestore extends BaseActivity {
     }
 
     public void startRestore (View view) {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType("file/*");
-        startActivityForResult(intent, RESTORE_RESULT_CODE);
+        if (Select.from(Blip.class).count() == 0) {
+            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+            intent.setType("application/zip");
+            startActivityForResult(intent, RESTORE_RESULT_CODE);
+        } else {
+            new AlertDialog.Builder(this)
+                    .setMessage(getResources().getString((R.string.confirm_overwrite)))
+                    .setCancelable(false)
+                    .setPositiveButton(android.R.string.yes,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                                    intent.setType("application/zip");
+                                    startActivityForResult(intent, RESTORE_RESULT_CODE);
+                                }
+                            })
+                    .setNegativeButton(android.R.string.cancel,
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                }
+                            }).show();
+        }
     }
 
     public void startImport (View view) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType("file/*");
+        intent.setType("application/zip");
         startActivityForResult(intent, IMPORT_RESULT_CODE);
     }
 
@@ -108,6 +130,7 @@ public class BackupRestore extends BaseActivity {
         }
 
         protected String doInBackground(String... paths) {
+            if (isCancelled()) return "Restore cancelled";
             try {
                 for (String path : paths) {
                     Decompress decompress = new Decompress(path, getApplicationContext().getFilesDir() + "/sounds/");
