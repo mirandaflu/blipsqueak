@@ -34,6 +34,7 @@ public class SettingsActivity extends BaseActivity {
 
         // use action bar here
         ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     public static class SettingsFragment extends PreferenceFragment {

@@ -17,10 +17,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 package com.blipsqueak.app;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
