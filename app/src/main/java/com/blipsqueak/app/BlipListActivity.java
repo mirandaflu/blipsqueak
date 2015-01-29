@@ -223,6 +223,7 @@ public class BlipListActivity extends BaseActivity {
                                                 animateFabTo(0, 500);
                                                 if (!undoTapped) deleteTemporaryUndoItem();
                                                 undoTapped = false;
+                                                temporaryUndoItem = null;
                                             }
 
                                             @Override
