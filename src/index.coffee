@@ -77,8 +77,8 @@ scaleThings = ->
 
 	ps = document.getElementsByTagName 'p'
 	Array.prototype.forEach.call ps, (p) ->
-		p.style.height = p.parentNode.offsetHeight + 'px'
-		p.style.width = p.parentNode.offsetWidth + 'px'
+		p.style.height = p.parentNode.parentNode.offsetHeight + 'px'
+		p.style.width = p.parentNode.parentNode.offsetWidth + 'px'
 
 	if $(window).width() >= 768
 		$('#pocket').css {'position':'relative', 'top': Math.floor(window.innerHeight * 0.1) + 'px'}
