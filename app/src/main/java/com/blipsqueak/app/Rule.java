@@ -19,7 +19,7 @@ package com.blipsqueak.app;
 
 import com.orm.SugarRecord;
 
-public class Rule extends SugarRecord<Rule> {
+public class Rule extends SugarRecord {
 
     public Rule () {}
     String blipId;

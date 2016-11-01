@@ -147,19 +147,6 @@ public class BlipListActivity extends BaseActivity {
         temporaryUndoItem.delete();
     }
 
-    private void animateFabTo(int bottomPadding, long duration) {
-        final int newBottomPadding = bottomPadding;
-        final View v = findViewById(R.id.BlipList);
-        Animation a = new Animation() {
-            @Override
-            protected void applyTransformation(float interpolatedTime, Transformation t) {
-                v.setPadding(0, 0, 0, (int) (newBottomPadding * interpolatedTime));
-            }
-        };
-        a.setDuration(duration);
-        v.startAnimation(a);
-    }
-
     private void setupListeners(final BlipListActivity blipListActivity) {
         lvItems.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
@@ -211,7 +198,6 @@ public class BlipListActivity extends BaseActivity {
                                         .eventListener(new EventListener() {
                                             @Override
                                             public void onShow(Snackbar snackbar) {
-                                                animateFabTo(snackbar.getHeight(), 300);
                                             }
 
                                             @Override
@@ -220,7 +206,6 @@ public class BlipListActivity extends BaseActivity {
 
                                             @Override
                                             public void onDismiss(Snackbar snackbar) {
-                                                animateFabTo(0, 500);
                                                 if (!undoTapped) deleteTemporaryUndoItem();
                                                 undoTapped = false;
                                                 temporaryUndoItem = null;

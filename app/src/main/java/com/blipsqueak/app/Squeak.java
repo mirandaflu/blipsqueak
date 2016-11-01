@@ -26,7 +26,7 @@ import com.orm.SugarRecord;
 
 import java.io.File;
 
-public class Squeak extends SugarRecord<Squeak> {
+public class Squeak extends SugarRecord {
 
     public Squeak() {}
     long blipId;
