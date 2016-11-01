@@ -44,7 +44,7 @@ import java.util.Random;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-class Blip extends SugarRecord<Blip> implements Serializable{
+public class Blip extends SugarRecord implements Serializable{
 
     String name;
     String regex;

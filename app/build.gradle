@@ -15,7 +15,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.nispok:snackbar:2.7.1'
-    compile 'com.github.satyan:sugar:1.3'
+    compile 'com.github.satyan:sugar:1.5'
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile project(':drag-sort-listview')
 }
