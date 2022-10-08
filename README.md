@@ -1,7 +1,5 @@
 # Blipsqueak
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mirandaflu/blipsqueak?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 <img alt="Screenshot" align="right" height="350"
    src="/../gh-pages/img/device art/mainScreen-nexus5.png?raw=true" />
 
